@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-24T20:00:50 IST" name="Default suite" finished-at="2025-03-24T20:01:18 IST" duration-ms="27166">
+    <groups>
+      <group name="PL1">
+        <method signature="RestAssured_TestCases_PL1.getAllDepartmentsTest()[pri:1, instance:testcases.RestAssured_TestCases_PL1@431cd9b2]" name="getAllDepartmentsTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.getAllItemsTest()[pri:2, instance:testcases.RestAssured_TestCases_PL1@431cd9b2]" name="getAllItemsTest" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.getIncentiveSummary()[pri:3, instance:testcases.RestAssured_TestCases_PL1@431cd9b2]" name="getIncentiveSummary" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.getIncentiveReffSummary()[pri:4, instance:testcases.RestAssured_TestCases_PL1@431cd9b2]" name="getIncentiveReffSummary" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.getHospitalIncomeIncReport()[pri:5, instance:testcases.RestAssured_TestCases_PL1@431cd9b2]" name="getHospitalIncomeIncReport" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.getIncenEmpBillItems()[pri:6, instance:testcases.RestAssured_TestCases_PL1@431cd9b2]" name="getIncenEmpBillItems" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.getInventoryFiscalYears()[pri:7, instance:testcases.RestAssured_TestCases_PL1@431cd9b2]" name="getInventoryFiscalYears" class="testcases.RestAssured_TestCases_PL1"/>
+        <method signature="RestAssured_TestCases_PL1.activateInventory()[pri:8, instance:testcases.RestAssured_TestCases_PL1@431cd9b2]" name="activateInventory" class="testcases.RestAssured_TestCases_PL1"/>
+      </group> <!-- PL1 -->
+    </groups>
+    <test started-at="2025-03-24T20:00:50 IST" name="Default test" finished-at="2025-03-24T20:01:18 IST" duration-ms="27166">
+      <class name="testcases.RestAssured_TestCases_PL1">
+        <test-method signature="getAllDepartmentsTest()[pri:1, instance:testcases.RestAssured_TestCases_PL1@431cd9b2]" started-at="2025-03-24T20:00:51 IST" name="getAllDepartmentsTest" description="1. Send a GET request to Get All Departments
+2. Validate that all the DepartmentId and DepartmentName are not null.
+3. Verify the response status code is 200." finished-at="2025-03-24T20:01:02 IST" duration-ms="11663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllDepartmentsTest -->
+        <test-method signature="getAllItemsTest()[pri:2, instance:testcases.RestAssured_TestCases_PL1@431cd9b2]" started-at="2025-03-24T20:01:02 IST" name="getAllItemsTest" description="1. Send a GET request to Get All Items
+2. Validate that the Item Id and Item name are not null.
+3. Verify the response status code is 200." finished-at="2025-03-24T20:01:04 IST" duration-ms="1149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllItemsTest -->
+        <test-method signature="getIncentiveSummary()[pri:3, instance:testcases.RestAssured_TestCases_PL1@431cd9b2]" started-at="2025-03-24T20:01:04 IST" name="getIncentiveSummary" description="1. Send a GET request to Incentive Summary Report
+2. Validate that the Prescriber Id and Prescriber name are not null.
+3. Verify the response status code is 200." finished-at="2025-03-24T20:01:10 IST" duration-ms="6084" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getIncentiveSummary -->
+        <test-method signature="getIncentiveReffSummary()[pri:4, instance:testcases.RestAssured_TestCases_PL1@431cd9b2]" started-at="2025-03-24T20:01:10 IST" name="getIncentiveReffSummary" description="1. Send a GET request to Incentive Referral Summary Report
+2. Validate that the Prescriber name, PrescriberId, DocTotalAmount, TDSAmount and NetPayableAmount are not null.
+3. Verify the response status code is 200." finished-at="2025-03-24T20:01:12 IST" duration-ms="1996" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getIncentiveReffSummary -->
+        <test-method signature="getHospitalIncomeIncReport()[pri:5, instance:testcases.RestAssured_TestCases_PL1@431cd9b2]" started-at="2025-03-24T20:01:12 IST" name="getHospitalIncomeIncReport" description="1. Send a GET request to Hospital Income Incentive Report
+2. Validate that the ServiceDepartmentName, ServiceDepartmentId, NetSales, ReferralCommission, GrossIncome, OtherIncentive, and HospitalNetIncome are not null.
+3. Verify the response status code is 200." finished-at="2025-03-24T20:01:13 IST" duration-ms="1418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getHospitalIncomeIncReport -->
+        <test-method signature="getIncenEmpBillItems()[pri:6, instance:testcases.RestAssured_TestCases_PL1@431cd9b2]" started-at="2025-03-24T20:01:13 IST" name="getIncenEmpBillItems" description="1. Send a GET request to Incentive Employee Bill Items
+2. Validate that the EmployeeIncentiveInfoId, EmployeeId, FullName, TDSPercent, EmpTDSPercent, IsActive are not null.
+3. Verify the response status code is 200." finished-at="2025-03-24T20:01:15 IST" duration-ms="1985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getIncenEmpBillItems -->
+        <test-method signature="getInventoryFiscalYears()[pri:7, instance:testcases.RestAssured_TestCases_PL1@431cd9b2]" started-at="2025-03-24T20:01:15 IST" name="getInventoryFiscalYears" description="1. Send a GET request to Inventory Fiscal Years
+2. Validate that the FiscalYearId, FiscalYearName are not null.
+3. Verify the response status code is 200." finished-at="2025-03-24T20:01:16 IST" duration-ms="824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInventoryFiscalYears -->
+        <test-method signature="activateInventory()[pri:8, instance:testcases.RestAssured_TestCases_PL1@431cd9b2]" started-at="2025-03-24T20:01:16 IST" name="activateInventory" description="1. Send a GET request to Activate Inventory
+2. Validate that the StoreId, Name, and StoreDescription are not null.
+3. Verify the response status code is 200." finished-at="2025-03-24T20:01:18 IST" duration-ms="1557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- activateInventory -->
+      </class> <!-- testcases.RestAssured_TestCases_PL1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
